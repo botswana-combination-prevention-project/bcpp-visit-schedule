@@ -3,11 +3,7 @@ from edc_visit_schedule.visit import Crf, FormsCollection
 app_label = 'bcpp_subject'
 
 
-class CrfsBhs(FormsCollection):
-    pass
-
-
-crfs_bhs = CrfsBhs(
+crfs_bhs = FormsCollection(
     Crf(show_order=20, model=f'{app_label}.residencymobility', required=True),
     Crf(show_order=30, model=f'{app_label}.communityengagement',
         required=True),

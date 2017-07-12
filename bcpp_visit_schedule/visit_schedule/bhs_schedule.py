@@ -1,3 +1,5 @@
+from dateutil.relativedelta import relativedelta
+
 from edc_visit_schedule.schedule import Schedule
 from edc_visit_schedule.visit import Visit
 
@@ -18,6 +20,9 @@ bhs_visit = Visit(
     title='Baseline Survey',
     timepoint=0,
     base_interval=0,
+    rbase=relativedelta(days=0),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=364),
     requisitions=requisitions.forms,
     crfs=crfs_bhs.forms)
 

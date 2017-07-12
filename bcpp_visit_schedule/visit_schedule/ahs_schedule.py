@@ -21,7 +21,8 @@ ahs_visit1 = Visit(
     title='1st Annual Survey',
     timepoint=1,
     rbase=relativedelta(years=1),
-    rlower=relativedelta(years=0),
+    rlower=relativedelta(years=1),
+    rupper=relativedelta(years=2),
     base_interval_unit=YEARS,
     requisitions=requisitions.forms,
     crfs=crfs_ahs.forms)
@@ -31,7 +32,8 @@ ahs_visit2 = Visit(
     title='2nd Annual Survey',
     timepoint=2,
     rbase=relativedelta(years=2),
-    rlower=relativedelta(years=0),
+    rlower=relativedelta(years=2),
+    rupper=relativedelta(years=3),
     base_interval_unit=YEARS,
     requisitions=requisitions.forms,
     crfs=crfs_ahs.forms)

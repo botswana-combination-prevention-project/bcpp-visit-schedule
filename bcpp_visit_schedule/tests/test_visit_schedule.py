@@ -4,9 +4,7 @@ from django.test import TestCase, tag
 from edc_map.site_mappers import site_mappers
 from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 
-from ..visit_schedule import visit_schedule_bhs, visit_schedule_ahs
 from ..visit_schedule.crfs_ahs import crfs_ahs
-from ..visit_schedule import visit_schedule_ano, visit_schedule_ess
 from .mappers import TestMapper, TestMapper2
 
 
@@ -38,21 +36,8 @@ class TestVisitSchedule(TestCase):
             self.assertNotIn(crf.model, ['bcpp_subject.tbsymptoms',
                                          'bcpp_subject.hivuntested'])
 
-    def test_visit_schedule_register1(self):
-        site_visit_schedules._registry = {}
-        site_visit_schedules.register(visit_schedule_bhs)
-
-    def test_visit_schedule_register2(self):
-        site_visit_schedules._registry = {}
-        site_visit_schedules.register(visit_schedule_ahs)
-
-    def test_visit_schedule_register3(self):
-        site_visit_schedules._registry = {}
-        site_visit_schedules.register(visit_schedule_ano)
-
-    def test_visit_schedule_register4(self):
-        site_visit_schedules._registry = {}
-        site_visit_schedules.register(visit_schedule_ess)
+    def test_site_visit_schedules(self):
+        site_visit_schedules.validate()
 
     def test_imports_all(self):
         site_visit_schedules.autodiscover(apps=['bcpp_visit_schedule'])
