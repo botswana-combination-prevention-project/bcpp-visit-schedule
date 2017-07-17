@@ -1,8 +1,15 @@
-from edc_visit_schedule.visit import Requisition, FormsCollection
+from edc_visit_schedule.visit import Requisition, FormsCollection, Panel
 
-from bcpp_labs.labs import rdb_panel, microtube_panel, viral_load_panel
-from bcpp_labs.labs import venous_panel, elisa_panel
+RESEARCH_BLOOD_DRAW = 'Research Blood Draw'
+MICROTUBE = 'Microtube'
+VIRAL_LOAD = 'Viral Load'
+ELISA = 'ELISA'
 
+elisa_panel = Panel(name=ELISA)
+microtube_panel = Panel(name=MICROTUBE)
+rdb_panel = Panel(name=RESEARCH_BLOOD_DRAW)
+viral_load_panel = Panel(name=VIRAL_LOAD)
+venous_panel = Panel(name=VIRAL_LOAD)
 
 app_label = 'bcpp_subject'
 

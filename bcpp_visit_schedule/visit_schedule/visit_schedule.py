@@ -5,10 +5,10 @@ from django.core.management.color import color_style
 from edc_map.site_mappers import site_mappers
 from edc_visit_schedule.visit_schedule import VisitSchedule
 
-from .bhs_schedule import bhs_schedule
 from .ahs_schedule import ahs_schedule
-from .ess_schedule import ess_schedule
 from .ano_schedule import ano_schedule
+from .bhs_schedule import bhs_schedule
+from .ess_schedule import ess_schedule
 
 style = color_style()
 

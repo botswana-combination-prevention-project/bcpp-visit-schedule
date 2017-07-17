@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'edc_map.apps.AppConfig',
-    'bcpp_labs.apps.AppConfig',
-    # 'bcpp_community.apps.AppConfig',
+    'bcpp_community.apps.AppConfig',
     'bcpp_visit_schedule.apps.AppConfig',
 ]
 

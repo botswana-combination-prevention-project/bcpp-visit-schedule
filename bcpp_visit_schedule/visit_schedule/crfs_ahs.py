@@ -16,7 +16,8 @@ class CrfsAhs(FormsCollection):
                      if crf.model not in [f'{app_label}.hivuntested']]
         else:
             forms = [crf for crf in self._forms
-                     if crf.model not in [f'{app_label}.tbsymptoms', f'{app_label}.hivuntested']]
+                     if crf.model not in [
+                         f'{app_label}.tbsymptoms', f'{app_label}.hivuntested']]
         return forms
 
 
