@@ -1,0 +1,9 @@
+from edc_visit_schedule.site_visit_schedules import site_visit_schedules
+
+from .visit_schedule import visit_schedule_bhs, visit_schedule_ahs
+from .visit_schedule import visit_schedule_ess, visit_schedule_ano
+
+site_visit_schedules.register(visit_schedule_bhs)
+site_visit_schedules.register(visit_schedule_ahs)
+site_visit_schedules.register(visit_schedule_ess)
+site_visit_schedules.register(visit_schedule_ano)
