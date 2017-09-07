@@ -6,6 +6,7 @@ VIRAL_LOAD = 'Viral Load'
 ELISA = 'ELISA'
 VENOUS = 'Venous'
 
+
 elisa_panel = Panel(name=ELISA)
 microtube_panel = Panel(name=MICROTUBE)
 rdb_panel = Panel(name=RESEARCH_BLOOD_DRAW)
