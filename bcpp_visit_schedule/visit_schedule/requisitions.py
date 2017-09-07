@@ -4,12 +4,14 @@ RESEARCH_BLOOD_DRAW = 'Research Blood Draw'
 MICROTUBE = 'Microtube'
 VIRAL_LOAD = 'Viral Load'
 ELISA = 'ELISA'
+VENOUS = 'Venous (HIV)'
+
 
 elisa_panel = Panel(name=ELISA)
 microtube_panel = Panel(name=MICROTUBE)
 rdb_panel = Panel(name=RESEARCH_BLOOD_DRAW)
 viral_load_panel = Panel(name=VIRAL_LOAD)
-venous_panel = Panel(name=VIRAL_LOAD)
+venous_panel = Panel(name=VENOUS)
 
 app_label = 'bcpp_subject'
 
