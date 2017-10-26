@@ -67,4 +67,5 @@ crfs_ahs = CrfsAhs(
     Crf(show_order=370, model=f'{app_label}.hicenrollment',
         required=False, additional=True),
     Crf(show_order=380, model=f'{app_label}.subjectreferral', required=True),
+    Crf(show_order=390, model=f'{app_label}.ceaopd', required=True),
 )
