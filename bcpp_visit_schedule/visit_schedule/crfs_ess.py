@@ -47,5 +47,4 @@ crfs_ess = CrfsEss(
     Crf(show_order=360, model=f'{app_label}.pimacd4',
         required=False, additional=True),
     Crf(show_order=370, model=f'{app_label}.subjectreferral', required=True),
-    Crf(show_order=390, model=f'{app_label}.ceaopd', required=True),
 )
