@@ -55,7 +55,7 @@ crfs_ahs = CrfsAhs(
     Crf(show_order=280,
         model=f'{app_label}.resourceutilization', required=True),
     Crf(show_order=290, model=f'{app_label}.outpatientcare', required=True),
-    Crf(show_order=300, model=f'{app_label}.ceaopd', required=True),
+    Crf(show_order=300, model=f'{app_label}.ceaopd', required=False),
     Crf(show_order=310, model=f'{app_label}.hospitaladmission', required=True),
     Crf(show_order=320,
         model=f'{app_label}.hivhealthcarecosts', required=True),
