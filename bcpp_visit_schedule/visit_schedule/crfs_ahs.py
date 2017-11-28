@@ -1,7 +1,8 @@
-from edc_map.site_mappers import site_mappers
+from bcpp_community import is_intervention
 from edc_visit_schedule.visit import Crf, FormsCollection
 
-from bcpp_community import is_intervention
+from edc_map.site_mappers import site_mappers
+
 
 app_label = 'bcpp_subject'
 
@@ -54,17 +55,18 @@ crfs_ahs = CrfsAhs(
     Crf(show_order=280,
         model=f'{app_label}.resourceutilization', required=True),
     Crf(show_order=290, model=f'{app_label}.outpatientcare', required=True),
-    Crf(show_order=300, model=f'{app_label}.hospitaladmission', required=True),
-    Crf(show_order=310,
+    Crf(show_order=300, model=f'{app_label}.ceaopd', required=False),
+    Crf(show_order=310, model=f'{app_label}.hospitaladmission', required=True),
+    Crf(show_order=320,
         model=f'{app_label}.hivhealthcarecosts', required=True),
-    Crf(show_order=320, model=f'{app_label}.labourmarketwages', required=True),
-    Crf(show_order=330, model=f'{app_label}.hivlinkagetocare', required=True),
-    Crf(show_order=340, model=f'{app_label}.hivresult', required=True),
-    Crf(show_order=350, model=f'{app_label}.elisahivresult',
+    Crf(show_order=330, model=f'{app_label}.labourmarketwages', required=True),
+    Crf(show_order=340, model=f'{app_label}.hivlinkagetocare', required=True),
+    Crf(show_order=350, model=f'{app_label}.hivresult', required=True),
+    Crf(show_order=360, model=f'{app_label}.elisahivresult',
         required=False, additional=True),
-    Crf(show_order=360, model=f'{app_label}.pimacd4',
+    Crf(show_order=370, model=f'{app_label}.pimacd4',
         required=False, additional=True),
-    Crf(show_order=370, model=f'{app_label}.hicenrollment',
+    Crf(show_order=380, model=f'{app_label}.hicenrollment',
         required=False, additional=True),
-    Crf(show_order=380, model=f'{app_label}.subjectreferral', required=True),
+    Crf(show_order=390, model=f'{app_label}.subjectreferral', required=True)
 )
